@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:pullup="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pull.ianc.com.pullview.MainActivity">
+
+
+    <pull.ianc.com.pullview.PullUpView
+        android:id="@+id/zero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:minHeight="@dimen/setting_column_size"
+        pullup:leftText="wight"
+        pullup:leftTextSize="20sp"
+        pullup:rightTextVisible="0"
+        pullup:rightText="80"
+        pullup:isMoreView="1"
+        pullup:rightTextSize="20sp">
+
+    </pull.ianc.com.pullview.PullUpView>
+
+    <pull.ianc.com.pullview.PullUpView
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:minHeight="@dimen/setting_column_size"
+        pullup:leftText="wight"
+        pullup:leftTextSize="20sp"
+        pullup:rightText="80"
+        pullup:isMoreView="1"
+        pullup:rightTextSize="20sp">
+
+    </pull.ianc.com.pullview.PullUpView>
+
+    <pull.ianc.com.pullview.PullUpView
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:minHeight="@dimen/setting_column_size"
+        pullup:leftText="Height"
+        pullup:leftTextSize="20sp"
+        pullup:rightText="170"
+        pullup:rightTextSize="20sp">
+
+    </pull.ianc.com.pullview.PullUpView>
+
+
+    <pull.ianc.com.pullview.PullUpView
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:minHeight="@dimen/setting_column_size"
+        pullup:leftText="show tip"
+        pullup:tipVisible="1"
+        pullup:tipText="this is a tip"
+        pullup:leftTextSize="20sp"
+        pullup:rightText="170"
+        pullup:rightTextSize="20sp">
+
+    </pull.ianc.com.pullview.PullUpView>
+
+
+
+    <pull.ianc.com.pullview.PullUpView
+        android:id="@+id/pvMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:minHeight="@dimen/setting_column_size"
+        pullup:haveChildView="1"
+        pullup:leftText="Height"
+        pullup:leftTextSize="20sp"
+        pullup:rightText="170"
+        pullup:rightTextSize="20sp">
+        <LinearLayout
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="show more........"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@drawable/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </pull.ianc.com.pullview.PullUpView>
+</LinearLayout>

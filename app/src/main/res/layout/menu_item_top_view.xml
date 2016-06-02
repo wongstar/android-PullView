@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:id="@+id/flTop"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/selector_list_view"
+    android:minHeight="@dimen/setting_column_size">
+
+
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/card_item_text_size" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvTip"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="10sp"
+            android:textColor="@color/share_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlPullUp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:clickable="true">
+
+        <ImageView
+
+            android:id="@+id/ivPullUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvRight"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="60dp"
+        android:textSize="@dimen/card_item_text_size" />
+
+</FrameLayout>
