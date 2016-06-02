@@ -1,6 +1,9 @@
 # android-PullView
 a custom view for pull view
 
+https://github.com/wongstar/android-PullView/blob/master/screen.png
+
+
 How to Use it
 
 	android:id="@+id/two"
